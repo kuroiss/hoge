@@ -2,9 +2,6 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import pandas as pd
 import numpy as np
-# filename = 'erg_orb_l2_pos_gse.txt'
-
-# df = pd.read_table('./' + filename, header = None, usecols = [1, 2, 3], nrows = 1000, sep = '        ')
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection = '3d')
@@ -26,9 +23,6 @@ stick_x = np.cos(theta) * r
 stick_y = np.sin(theta) * r
 stick_z = np.array([[0] * 100, [5] * 100])
 
-# stick_x = [0] * 100
-# stick_z = [0] * 100
-# stick_y = np.linspace(0, 3, 100)
 ax.set_xlim([-6, 6])
 ax.set_ylim([-6, 6])
 ax.set_zlim([-6, 6])
